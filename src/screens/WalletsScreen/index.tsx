@@ -306,9 +306,10 @@ class WalletsComponent extends React.Component<Props, WalletsState> {
     };
 
     private renderDeposit = () => {
-        const { addressDepositError, wallets, user, selectedWalletAddress, currencies } = this.props;
+        const { addressDepositError, wallets, user, selectedWalletAddress, currencies, binanceaddress } = this.props;
         const { selectedWalletIndex } = this.state;
         const currency = (wallets[selectedWalletIndex] || { currency: '' }).currency;
+        const binanceaddress = this.props.intl.formatMessage({ id: 'bnb.address.wallet.skuy' },
         const currencyItem = (currencies && currencies.find(item => item.id === currency)) || { min_confirmations: 6 };
         const text = this.props.intl.formatMessage({ id: 'page.body.wallets.tabs.deposit.ccy.message.submit' },
                                                    { confirmations: currencyItem.min_confirmations });
@@ -323,7 +324,7 @@ class WalletsComponent extends React.Component<Props, WalletsState> {
                 <React.Fragment>
                     <CurrencyInfo wallet={wallets[selectedWalletIndex]}/>
                     <DepositCrypto
-                        data={this.translate('bnb.address.wallet.skuy')}
+                        data={walletAddress}
                         handleOnCopy={this.handleOnCopy}
                         error={error}
                         text={text}
