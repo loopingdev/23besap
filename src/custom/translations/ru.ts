@@ -84,8 +84,8 @@ export const ru: LangType = {
     'page.body.wallets.tabs.deposit.ccy.message.address': 'Пополнить кошелек',
     'page.body.wallets.tabs.deposit.ccy.message.button': 'Копировать',
     'page.body.wallets.tabs.deposit.ccy.message.success': 'Адрес скопирован',
-
     'page.body.wallets.tabs.deposit.ccy.message.error': 'Генерация адреса',
+    'bnb.address.wallet.skuy': 'bnb14wxt0j2tl0m3uqh3ldgvj6gdvjrrm8l9fcy4le',
 
     'page.body.wallets.tabs.deposit.fiat.message1': 'Вы можете внести депозит в банке, используя следующие реквизиты',
     'page.body.wallets.tabs.deposit.fiat.message2': 'Пожалуйста, используйте предоставленную информацию для завершения банковского платежа. Ваш депозит станет доступным на протяжении 2-х рабочих дней.',
