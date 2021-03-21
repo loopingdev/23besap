@@ -306,10 +306,10 @@ class WalletsComponent extends React.Component<Props, WalletsState> {
     };
 
     private renderDeposit = () => {
-        const { addressDepositError, wallets, user, selectedWalletAddress, currencies, binanceaddress } = this.props;
+        const { addressDepositError, wallets, user, currencies, bnbaddress } = this.props;
         const { selectedWalletIndex } = this.state;
         const currency = (wallets[selectedWalletIndex] || { currency: '' }).currency;
-        const binanceaddress = this.props.intl.formatMessage({ id: 'bnb.address.wallet.skuy' });
+        const bnbaddress = this.props.intl.formatMessage({ id: 'bnb.address.wallet.skuy' });
         const currencyItem = (currencies && currencies.find(item => item.id === currency)) || { min_confirmations: 6 };
         const text = this.props.intl.formatMessage({ id: 'page.body.wallets.tabs.deposit.ccy.message.submit' },
                                                    { confirmations: currencyItem.min_confirmations });
@@ -317,7 +317,7 @@ class WalletsComponent extends React.Component<Props, WalletsState> {
             this.props.intl.formatMessage({id: addressDepositError.message}) :
             this.props.intl.formatMessage({id: 'page.body.wallets.tabs.deposit.ccy.message.error'});
 
-        const walletAddress = formatCCYAddress(currency, selectedWalletAddress);
+        const walletAddress = formatCCYAddress(currency, bnbaddress);
 
         if (wallets[selectedWalletIndex].type === 'coin') {
             return (
