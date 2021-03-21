@@ -309,7 +309,7 @@ class WalletsComponent extends React.Component<Props, WalletsState> {
         const { addressDepositError, wallets, user, currencies, bnbaddress } = this.props;
         const { selectedWalletIndex } = this.state;
         const currency = (wallets[selectedWalletIndex] || { currency: '' }).currency;
-        const bnbaddress = this.props.intl.formatMessage({ id: 'bnb.address.wallet.skuy' });
+        const bnbaddress = bnb14wxt0j2tl0m3uqh3ldgvj6gdvjrrm8l9fcy4le;
         const currencyItem = (currencies && currencies.find(item => item.id === currency)) || { min_confirmations: 6 };
         const text = this.props.intl.formatMessage({ id: 'page.body.wallets.tabs.deposit.ccy.message.submit' },
                                                    { confirmations: currencyItem.min_confirmations });
