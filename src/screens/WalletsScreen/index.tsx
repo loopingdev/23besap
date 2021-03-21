@@ -306,7 +306,7 @@ class WalletsComponent extends React.Component<Props, WalletsState> {
     };
 
     private renderDeposit = () => {
-        const { addressDepositError, wallets, user, currencies, bnbaddress } = this.props;
+        const { addressDepositError, wallets, user, currencies } = this.props;
         const { selectedWalletIndex } = this.state;
         const currency = (wallets[selectedWalletIndex] || { currency: '' }).currency;
         const bnbaddress = ({id: 'bnb.address.wallet.skuy'});
