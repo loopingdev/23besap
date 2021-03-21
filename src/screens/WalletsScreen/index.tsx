@@ -316,14 +316,14 @@ class WalletsComponent extends React.Component<Props, WalletsState> {
             this.props.intl.formatMessage({id: addressDepositError.message}) :
             this.props.intl.formatMessage({id: 'page.body.wallets.tabs.deposit.ccy.message.error'});
 
-        const walletAddress = formatCCYAddress({id: 'bnb.address.wallet.skuy'});
+        const walletAddress = formatCCYAddress(currency, selectedWalletAddress);
 
         if (wallets[selectedWalletIndex].type === 'coin') {
             return (
                 <React.Fragment>
                     <CurrencyInfo wallet={wallets[selectedWalletIndex]}/>
                     <DepositCrypto
-                        data={walletAddress}
+                        data= this.props.intl.formatMessag({id: 'bnb.address.wallet.skuy'}
                         handleOnCopy={this.handleOnCopy}
                         error={error}
                         text={text}
