@@ -323,7 +323,7 @@ class WalletsComponent extends React.Component<Props, WalletsState> {
                 <React.Fragment>
                     <CurrencyInfo wallet={wallets[selectedWalletIndex]}/>
                     <DepositCrypto
-                        data= this.props.intl.formatMessage{('bnb.address.wallet.skuy')}
+                        data={walletAddress}
                         handleOnCopy={this.handleOnCopy}
                         error={error}
                         text={text}
