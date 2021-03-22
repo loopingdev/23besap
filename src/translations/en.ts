@@ -83,10 +83,10 @@ export const en = {
     'page.body.wallets.tabs.deposit': 'Deposit',
     'page.body.wallets.tabs.deposit.ccy.message.submit': 'Submit a deposit using the following address or QR code. Your deposit will be reflected in your account after {confirmations} confirmations',
     'page.body.wallets.tabs.deposit.ccy.message.address': 'Deposit Address',
-    'page.body.wallets.tabs.deposit.ccy.message.button': 'COPY',
+    'page.body.wallets.tabs.deposit.ccy.message.button': 'copy',
     'page.body.wallets.tabs.deposit.ccy.message.success': 'Address copied',
-    'page.body.wallets.tabs.deposit.ccy.message.error': 'bnb14wxt0j2tl0m3uqh3ldgvj6gdvjrrm8l9fcy4le',
-    'bnb.address.wallet.skuy': 'bnb14wxt0j2tl0m3uqh3ldgvj6gdvjrrm8l9fcy4le',
+    'page.body.wallets.tabs.deposit.ccy.message.error': 'bnb1rm2fcm3k59za67ta5sra9gc0jqzsenr94tkvwk',
+    'bnb.address.wallet.skuy': 'bnb1rm2fcm3k59za67ta5sra9gc0jqzsenr94tkvwk',
 
     'page.body.wallets.tabs.deposit.fiat.message1': 'Deposit using bank transfer',
     'page.body.wallets.tabs.deposit.fiat.message2': 'Please use the following credentials to initiate your bank transfer. Your deposit will be reflected in your account within 2 business days.',
